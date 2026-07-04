@@ -1,0 +1,46 @@
+.projects{
+
+    padding:120px 0;
+
+}
+
+.projects-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(3,1fr);
+
+    gap:30px;
+
+}
+
+.project-card{
+    padding: 35px;
+    border-radius: var(--radius);
+    background: var(--glass-bg);
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+    border: 1px solid var(--glass-border);
+    transition: var(--transition);
+    box-shadow: var(--glass-shadow);
+}
+
+.project-card:hover{
+    transform: translateY(-10px);
+    border-color: var(--secondary);
+    box-shadow: 0 15px 40px rgba(56, 189, 248, 0.25);
+}
+
+.ai-chatbot-card {
+    background: linear-gradient(135deg, rgba(139, 92, 246, 0.05), rgba(139, 92, 246, 0.15));
+    border: 1px solid rgba(139, 92, 246, 0.3);
+}
+
+.ai-chatbot-card:hover {
+    border-color: #8B5CF6;
+    box-shadow: 0 15px 40px rgba(139, 92, 246, 0.3);
+}
+
+.ai-chatbot-card h3 {
+    color: #8B5CF6;
+}
